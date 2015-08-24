@@ -65,9 +65,10 @@
 (scroll-bar-mode -1)
 (global-linum-mode t)
 
+(setq-default indent-tabs-mode nil)
 (setq ring-bell-function 'ignore)
 (setq make-backup-files nil)
-(setq-default indent-tabs-mode nil)
+(setq auto-save-default nil)
 
 ;; Theme
 (load-theme 'monokai t)
