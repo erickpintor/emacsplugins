@@ -32,7 +32,7 @@
     scss-mode
 
     ;; Color theme
-    monokai-theme
+    material-theme
     ))
 
 (dolist (p my-packages)
@@ -76,4 +76,4 @@
 (setq auto-save-default nil)
 
 ;; Theme
-(load-theme 'monokai t)
+(load-theme 'material t)
