@@ -20,6 +20,7 @@
     smex
     neotree
     magit
+    which-key
     
     ;; Mac os shell fix
     exec-path-from-shell
@@ -59,6 +60,10 @@
 
 (require 'auto-complete)
 (ac-config-default)
+
+(require 'which-key)
+(which-key-mode)
+(which-key-setup-side-window-right-bottom)
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
