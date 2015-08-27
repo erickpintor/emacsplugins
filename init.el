@@ -14,6 +14,10 @@
 
 (defvar my-packages
   '(
+    ;; Please be evil
+    evil
+    evil-jumper
+    
     ;; General use
     projectile
     auto-complete
