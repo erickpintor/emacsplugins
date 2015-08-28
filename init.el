@@ -14,28 +14,13 @@
 
 (defvar my-packages
   '(
-    ;; Please be evil
-    evil
-    evil-jumper
-    
-    ;; General use
     projectile
     auto-complete
     smex
     neotree
     magit
     which-key
-    
-    ;; Mac os shell fix
     exec-path-from-shell
-
-    ;; Language support - Markdown
-    markdown-mode
-
-    ;; Html + Css
-    scss-mode
-
-    ;; Color theme
     material-theme
     ))
 
