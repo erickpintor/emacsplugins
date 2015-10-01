@@ -1,6 +1,17 @@
 ;; Disable warnings
 (setq warning-minimum-level :emergency)
 
+;; General UI configurations
+(menu-bar-mode -1)
+(when (display-graphic-p)
+  (tool-bar-mode -1)
+  (scroll-bar-mode -1))
+
+(setq-default indent-tabs-mode nil)
+(setq ring-bell-function 'ignore)
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+
 ;; Packages
 (require 'package)
 
@@ -21,12 +32,17 @@
     magit
     which-key
     exec-path-from-shell
-    material-theme
+    monokai-theme
+    pt
+    epresent
     ))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
+
+;; Theme
+(load-theme 'monokai t)
 
 ;; Configuragions
 (require 'ido)
@@ -53,16 +69,3 @@
 (require 'which-key)
 (which-key-mode)
 (which-key-setup-side-window-right-bottom)
-
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-(global-linum-mode t)
-
-(setq-default indent-tabs-mode nil)
-(setq ring-bell-function 'ignore)
-(setq make-backup-files nil)
-(setq auto-save-default nil)
-
-;; Theme
-(load-theme 'material t)
