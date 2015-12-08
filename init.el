@@ -34,7 +34,7 @@
     exec-path-from-shell
     monokai-theme
     pt
-    epresent
+    org-present
     ))
 
 (dolist (p my-packages)
