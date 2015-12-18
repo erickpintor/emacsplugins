@@ -35,6 +35,7 @@
     monokai-theme
     pt
     org-present
+    markdown-mode
     ))
 
 (dolist (p my-packages)
